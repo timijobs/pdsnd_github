@@ -5,10 +5,18 @@ This project was created on 11 October 2021
 US Bikeshare Data Analysis - Programming for Data Science
 
 ### Description
-Describe what your project is about and what it does
+This project allows users to request and explore data related to Bikeshare systems for three major cities in the United States—**Chicago**, **New York City**, and **Washington**.
+
+Users can request and explore Bikeshare usage patterns for the above mentioned cities through an interactive command-line program.
+
+Users can specify varying time filters like **month** or **day** of the week and also view some of the raw data used in the computation of the statistics.
+
+This project was done using Python and Pandas.
 
 ### Files used
-Include the files used
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
