@@ -5,7 +5,7 @@ This project was created on 11 October 2021
 US Bikeshare Data Analysis - Programming for Data Science
 
 ### Description
-This project allows users to request and explore data related to Bikeshare systems for three major cities in the United States—**Chicago**, **New York City**, and **Washington**.
+This project allows users to request and explore usage patterns related to Bikeshare systems for three major cities in the United States—**Chicago**, **New York City**, and **Washington**.
 
 Users can request and explore Bikeshare usage patterns for the above mentioned cities through an interactive command-line program.
 
