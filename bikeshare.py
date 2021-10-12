@@ -1,6 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
+from tabulate import tabulate
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -226,7 +227,7 @@ def show_data(df):
         rows = df.shape[0]
         x, y = 0, 5
     while show_raw_data == 'yes' and y < rows:
-        data_snip = df.iloc[x:y]
+        data_snip = tabulate(df.iloc[x:y], headers="keys")
         print('.'*70)
         print('Showing rows {} to {}'.format(x+1, y))
         print('\n', data_snip)
