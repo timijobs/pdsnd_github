@@ -1,6 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
+from tabulate import tabulate
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -208,7 +209,7 @@ def user_stats(df, city):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-def show_data(df):
+def display_data(df):
     """Loads raw data based on user input and prints to console 5 rows at a time.
     Args:
         (DataFrame) df - name of the Pandas dataframe filtered by all, month or day
@@ -226,7 +227,7 @@ def show_data(df):
         rows = df.shape[0]
         x, y = 0, 5
     while show_raw_data == 'yes' and y < rows:
-        data_snip = df.iloc[x:y]
+        data_snip = tabulate(df.iloc[x:y], headers="keys")
         print('.'*70)
         print('Showing rows {} to {}'.format(x+1, y))
         print('\n', data_snip)
@@ -260,7 +261,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df, city)
-        show_data(df)
+        display_data(df)
 
         # Validate user input for exiting the program loop
         restart = input('\nWould you like to restart? Enter yes or no.\n').lower()
