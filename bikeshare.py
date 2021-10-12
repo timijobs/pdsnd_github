@@ -209,7 +209,7 @@ def user_stats(df, city):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-def show_data(df):
+def display_data(df):
     """Loads raw data based on user input and prints to console 5 rows at a time.
     Args:
         (DataFrame) df - name of the Pandas dataframe filtered by all, month or day
@@ -261,7 +261,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df, city)
-        show_data(df)
+        display_data(df)
 
         # Validate user input for exiting the program loop
         restart = input('\nWould you like to restart? Enter yes or no.\n').lower()
