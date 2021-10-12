@@ -19,4 +19,4 @@ new_york_city.csv
 washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Thanks to the Udacity tutors Juno Lee and Richard Kalehoff for their efforts in delivering this course and to [Motivate](https://www.motivateco.com/) for the datasets used in this project.
